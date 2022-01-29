@@ -1,11 +1,4 @@
-import _ from 'lodash';
-import './style.css';
-function component() {
-  const element = document.createElement('div');
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  return element;
-}
-document.body.appendChild(component());
+
 function openPage(pageName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */
     var i, tabcontent, tablinks;
@@ -26,6 +19,5 @@ function openPage(pageName, elmnt, color) {
     // Add the specific color to the button used to open the tab content
     elmnt.style.backgroundColor = color;
   }
-  
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+   // Get the element with id="defaultOpen" and click on it
+   document.getElementById("defaultOpen").click();

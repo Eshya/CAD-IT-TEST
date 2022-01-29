@@ -12,13 +12,14 @@
        
         
         <button class="tablink" onclick="openPage('Data1', this, 'red')">Q.1</button>
-        <button class="tablink" onclick="openPage('Data2', this, 'green')" id="defaultOpen">Q.2</button>
+        <button class="tablink" id="defaultOpen" onclick="openPage('Data2', this, 'green')" >Q.2</button>
         <button class="tablink" onclick="openPage('Data3', this, 'blue')">Q.3</button>
         <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
         
         <div id="Data1" class="tabcontent">
             <h3>Q.1</h3>
             <p>Salary Conversion</p>
+            <div class="tableboard1"></div>
         </div>
 
         <div id="Data2" class="tabcontent">
@@ -32,12 +33,15 @@
         </div>
 
         <div id="About" class="tabcontent">
-            <h3>About</h3>
-            <p>Who we are and what we do.</p>
+            <h3>About Me</h3>
+            <p>Hi, my name is Achmad Yaseh Mutawaqqil Alalloh. You can call me Yaseh .</p>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.27.1/ramda.min.js"></script>
-    <script src="bundle.js"></script>
+    <!-- <script src="bundle.js" type="text/javascript"></script> -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="page.js" type="text/javascript"></script>
+    <script src="table1.js" type="text/javascript"></script>
+   
     <!-- <script>
         function openPage(pageName, elmnt, color) {
             // Hide all elements with class="tabcontent" by default */

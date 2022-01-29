@@ -1,35 +1,69 @@
 body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial;
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Data1 {background-color: rgb(54, 49, 49);}
+#Data2 {background-color: rgb(54, 49, 49);}
+#Data3 {background-color: rgb(54, 49, 49);}
+#About {background-color: rgb(54, 49, 49);}
+
+
+.tableboard1 {
+  padding: 0;
+  margin: auto;
+  border-collapse: collapse;
+  width: 80%;
+  text-align: center;
+  color: black;
   }
-  
-  /* Style tab links */
-  .tablink {
-    background-color: #555;
+
+ .salaryBoardTableHeaderRow {
+    background-color:black;
     color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
+    font-size: 15px;
+    font-weight: bold;
+    height: 50px;
   }
-  
-  .tablink:hover {
-    background-color: #777;
+  .salaryBoardTableBodyRow{
+    background-color: white;
+    font-size: 10px;
+    color: black;
   }
-  
-  /* Style the tab content (and add height:100% for full page content) */
-  .tabcontent {
-    color: white;
-    display: none;
-    padding: 100px 20px;
-    height: 100%;
-  }
-  
-  #Data1 {background-color: red;}
-  #Data2 {background-color: green;}
-  #Data3 {background-color: blue;}
-  #About {background-color: orange;}
+.salaryBoardTableBodyRow:nth-child(odd){background-color: rgba(128, 128, 128, 0.050);}
+#latestUserScore {
+  background-color: white;
+}
+
+.salaryBoardTableBodyRow:hover{
+  background-color: blue;
+}
+.salaryboardTable tr td {
+  height: 25px;
+}
