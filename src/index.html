@@ -7,7 +7,7 @@
     <title>IoT Application Developer Tech Test:Achmad Yaseh Mutawaqql A.</title>
 </head>
 <body>
-    
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
     <div id="main">
        
         
@@ -32,41 +32,62 @@
         <div id="Data3" class="tabcontent">
             <h3>Q.3</h3>
             <p>Sensors Aggregation Simulation</p>
+            <div class="controls--container">
+                <button id="clear">Clear</button>
+                <button id="stop">Stop</button>
+                <button id="start">Start</button>
+                <button id="random">Randomize Interval</button>
+                <span id="output"></span>
+            </div>
+            <div class="rowchart roomArea1">
+                <div class="columnchart temperature">
+                        <div id="myChart" style="height: 300px; width: 100%;">
+                            <a class="zc-ref" href="https://www.zingchart.com">Powered by ZingChart</a>
+                        </div>
+                </div>
+                <div class="columnchart humidity">
+                        
+                </div>
+
+            </div>
+            <div class="rowchart roomArea2">
+                <div class="columnchart temperature">
+                    <div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+                </div>
+                <div class="columnchart humidity">
+                    <div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+                </div>
+
+            </div>
+            <div class="rowchart roomArea3">
+                <div class="columnchart temperature">
+                    <div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+                </div>
+                <div class="columnchart humidity">
+                    <div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+                </div>
+
+            </div>
+            
         </div>
 
         <div id="About" class="tabcontent">
             <h3>About Me</h3>
-            <p>Hi, my name is Achmad Yaseh Mutawaqqil Alalloh. You can call me Yaseh .</p>
+            <p> Hi, my name is Achmad Yaseh Mutawaqqil Alalloh. You can call me Yaseh. 
+                I am twenty-three years old. I am a graduate alumnus at Sepuluh Nopember Institute of Technology majoring in Physics Engineering.
+                I have enough experience that I have accumulated during my studies from internal and official projects from certain companies. 
+                Majoring in Instrumentation , Control ,and Programming. Passionate for Human Machine Interface and Embedded System with IoT capability.
+                Always eager to look for place to learn or work and make interesting technology
+            </p>
         </div>
     </div>
     <!-- <script src="bundle.js" type="text/javascript"></script> -->
     <script src="jquery-3.6.0.min.js"></script>
     <script src="page.js" type="text/javascript"></script>
     <script src="table1.js" type="text/javascript"></script>
-   
-    <!-- <script>
-        function openPage(pageName, elmnt, color) {
-            // Hide all elements with class="tabcontent" by default */
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-            }
-        
-            // Remove the background color of all tablinks/buttons
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-            }
-        
-            // Show the specific tab content
-            document.getElementById(pageName).style.display = "block";
-        
-            // Add the specific color to the button used to open the tab content
-            elmnt.style.backgroundColor = color;
-        }
-        document.getElementById("defaultOpen").click();
-    </script> -->
+    <script src="table3.js" type="text/javascript"></script>
+    
+    
     
 </body>
 </html>

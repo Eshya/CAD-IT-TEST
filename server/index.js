@@ -2,8 +2,8 @@ require("dotenv").config()
 const express = require('express')
 const path = require('path')
 const cors = require("cors");
-const PORT = process.env.PORT || 3092
-const PORT_BACKEND = process.env.PORT_BACKEND || 5092
+const PORT = process.env.PORT || 3000
+const PORT_BACKEND = process.env.PORT_BACKEND || 5000
 const DIST_FOLDER = path.resolve(__dirname, '..', 'dist')
 
 const app = express();
