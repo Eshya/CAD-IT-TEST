@@ -5,7 +5,7 @@
   "scripts": {
     "test": "node src/test.js",
     "build": "webpack",
-    "start": "nodemon server --exec babel-node --",
+    "start": "node server",
     "prod": "npm run build && npm run start",
     "js": "nodemon src/test.js --exec babel-node --"
   },
@@ -20,6 +20,7 @@
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
     "fs": "0.0.1-security",
+    "json-groupby": "^1.1.0",
     "merge-json": "0.1.0-b.3"
   },
   "devDependencies": {
